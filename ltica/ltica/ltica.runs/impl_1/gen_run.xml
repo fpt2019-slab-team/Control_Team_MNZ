@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xq7z020cl400-1I" LaunchTime="1565266028">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="ltica.drc"/>
+  <File Type="BG-BGN" Name="ltica.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="ltica.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="ltica.ltx"/>
+  <File Type="BITSTR-MMI" Name="ltica.mmi"/>
+  <File Type="BITSTR-BMM" Name="ltica_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="ltica.nky"/>
+  <File Type="BITSTR-RBT" Name="ltica.rbt"/>
+  <File Type="BITSTR-MSK" Name="ltica.msk"/>
+  <File Type="BG-BIN" Name="ltica.bin"/>
+  <File Type="BG-BIT" Name="ltica.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ltica_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ltica_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ltica_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="ltica.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ltica_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ltica_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ltica_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ltica_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ltica_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ltica_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ltica_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="ltica_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ltica_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="ltica_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ltica_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ltica_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="ltica_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="ltica_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="ltica_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="ltica_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ltica_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ltica_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ltica_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="ltica_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="ltica_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="ltica_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ltica_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="ltica_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ltica_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="ltica_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="ltica_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ltica_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ltica_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ltica_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="ltica_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ltica_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ltica_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="ltica_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ltica_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="ltica_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ltica_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="ltica_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="ltica_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="ltica_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="ltica_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="ltica_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="ltica_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ltica.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ltica_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="ltica_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="ltica_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="ltica_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ltica_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="ltica_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ltica_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="ltica.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../ltable.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../LED.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ltica"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../LED.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,23 @@
+
+*** Running vivado
+    with args -log ltica.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ltica.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source ltica.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1455.027 ; gain = 3.012 ; free physical = 7963 ; free virtual = 16313
+Command: synth_design -top ltica -part xq7z020cl400-1I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xq7z020'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xq7z020'. Explanation: Your license server is running an obsolete version of the xilinxd licensing daemon and needs to be upgraded to the current version.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xq7z020'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". If you are using a license server, verify that the license server is up and running a version of the xilinx daemon that is compatible with the version of Xilinx software that you are using. Please note that Vivado 2017.3 and later requires upgrading your license server tools to the Flex 11.14.1 tools. Please confirm with your license admin that the correct version of the license server tools are installed.
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  8 21:07:32 2019...
