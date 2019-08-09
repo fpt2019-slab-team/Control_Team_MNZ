@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Thu Aug  8 21:50:49 2019
+| Date         : Fri Aug  9 16:18:45 2019
 | Host         : duck running 64-bit unknown
 | Command      : report_drc -file ltica_drc_opted.rpt -pb ltica_drc_opted.pb -rpx ltica_drc_opted.rpx
 | Design       : ltica

@@ -29,7 +29,7 @@ always@(posedge clk1k) begin
 	cnt1k <= cnt1k + 10'b1;
 end
 
-always@(posedge cnt1k[6]) begin
+always@(posedge cnt1k[4]) begin
 	if (ccnt == 3'd5) begin
 		ccnt <= 3'b0;
 	end else begin

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Thu Aug  8 21:50:53 2019
+| Date         : Fri Aug  9 16:18:49 2019
 | Host         : duck running 64-bit unknown
 | Command      : report_control_sets -verbose -file ltica_control_sets_placed.rpt
 | Design       : ltica
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     1 |
-| Unused register locations in slices containing registers |     6 |
+| Number of unique control sets                            |     4 |
+| Unused register locations in slices containing registers |    15 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,6 +34,9 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
+|      3 |            1 |
+|     10 |            1 |
+|     13 |            1 |
 |    16+ |            1 |
 +--------+--------------+
 
@@ -44,9 +47,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              26 |            7 |
+| No           | No                    | No                     |              26 |            8 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               0 |            0 |
+| No           | Yes                   | No                     |              31 |            8 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -59,7 +62,10 @@ Table of Contents
 +----------------+---------------+------------------+------------------+----------------+
 |  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+---------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG |               |                  |                7 |             26 |
+|  p_0_in        |               |                  |                2 |              3 |
+|  clk1k_reg_n_0 |               |                  |                2 |             10 |
+|  clk_IBUF_BUFG |               |                  |                4 |             13 |
+|  clk_IBUF_BUFG |               | clk1k            |                8 |             31 |
 +----------------+---------------+------------------+------------------+----------------+
 
 

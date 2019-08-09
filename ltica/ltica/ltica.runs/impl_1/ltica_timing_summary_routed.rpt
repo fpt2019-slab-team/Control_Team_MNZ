@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Thu Aug  8 21:51:11 2019
+| Date         : Fri Aug  9 16:19:07 2019
 | Host         : duck running 64-bit unknown
 | Command      : report_timing_summary -max_paths 10 -file ltica_timing_summary_routed.rpt -pb ltica_timing_summary_routed.pb -rpx ltica_timing_summary_routed.rpx -warn_on_violation
 | Design       : ltica
@@ -52,7 +52,11 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 26 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 44 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+ There are 11 register/latch pins with no clock driven by root clock pin: clk1k_reg/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: cnt1k_reg[4]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -67,7 +71,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 26 pins that are not constrained for maximum delay. (HIGH)
+ There are 98 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

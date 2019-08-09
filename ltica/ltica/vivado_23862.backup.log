@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Aug  9 16:07:32 2019
+# Process ID: 23862
+# Current directory: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica
+# Command line: vivado -mode batch -source /home/cad/xilinx-vivado-2018.3/Vivado/2018.3/scripts/runPar.tcl -tclargs -hosts duck,16 -jobCmd ssh -q -o BatchMode=yes /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/.jobs/job14.sh
+# Log file: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/vivado.log
+# Journal file: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/vivado.jou
+#-----------------------------------------------------------

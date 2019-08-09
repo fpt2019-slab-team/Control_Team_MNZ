@@ -2,11 +2,24 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Aug  8 21:51:27 2019
-# Process ID: 2835
+# Start of session at: Fri Aug  9 16:22:31 2019
+# Process ID: 24745
 # Current directory: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica
-# Command line: vivado -mode batch -source /home/cad/xilinx-vivado-2018.3/Vivado/2018.3/scripts/runPar.tcl -tclargs -hosts duck,16 -jobCmd ssh -q -o BatchMode=yes /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/.jobs/job3.sh
+# Command line: vivado ltica.xpr
 # Log file: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/vivado.log
 # Journal file: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/vivado.jou
 #-----------------------------------------------------------
-source /home/cad/xilinx-vivado-2018.3/Vivado/2018.3/scripts/runPar.tcl
+start_gui
+open_project ltica.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/ltica.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/ltica.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

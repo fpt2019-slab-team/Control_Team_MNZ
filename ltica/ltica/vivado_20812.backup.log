@@ -1,0 +1,128 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Aug  9 15:44:27 2019
+# Process ID: 20812
+# Current directory: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica
+# Command line: vivado ltica.xpr
+# Log file: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/vivado.log
+# Journal file: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project ltica.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/cad/xilinx-vivado-2018.3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 6528.750 ; gain = 180.027 ; free physical = 147 ; free virtual = 4879
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltable.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/LED.v:]
+launch_runs synth_1 -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes}
+[Fri Aug  9 15:45:54 2019] Launched synth_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes}
+[Fri Aug  9 15:46:35 2019] Launched synth_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes}
+[Fri Aug  9 15:47:14 2019] Launched synth_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1/runme.log
+add_files -norecurse {/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/dsm.sv /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/costable.sv /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/splitter.sv}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes}
+[Fri Aug  9 15:49:27 2019] Launched synth_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes}
+[Fri Aug  9 15:50:36 2019] Launched impl_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes}
+[Fri Aug  9 15:51:09 2019] Launched impl_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes}
+[Fri Aug  9 15:51:51 2019] Launched impl_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes}
+[Fri Aug  9 15:53:54 2019] Launched impl_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xq7z020cl400-1I
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 7255.273 ; gain = 0.000 ; free physical = 146 ; free virtual = 4264
+Restored from archive | CPU: 0.030000 secs | Memory: 0.146912 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 7255.273 ; gain = 0.000 ; free physical = 146 ; free virtual = 4264
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7255.273 ; gain = 0.000 ; free physical = 142 ; free virtual = 4265
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 7439.555 ; gain = 796.234 ; free physical = 145 ; free virtual = 4219
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A939B6A
+open_hw_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:53 . Memory (MB): peak = 8155.465 ; gain = 715.910 ; free physical = 84 ; free virtual = 3289
+set_property PROGRAM.FILE {/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/ltica.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:39 . Memory (MB): peak = 8173.754 ; gain = 0.000 ; free physical = 83 ; free virtual = 3264
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/ltica.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 8181.145 ; gain = 0.000 ; free physical = 83 ; free virtual = 3266
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1
+
+launch_runs synth_1 -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes}
+[Fri Aug  9 16:03:56 2019] Launched synth_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1
+
+launch_runs synth_1 -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes}
+[Fri Aug  9 16:05:40 2019] Launched synth_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 8238.285 ; gain = 1.000 ; free physical = 84 ; free virtual = 3223
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1
+
+reset_runs: Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:07 . Memory (MB): peak = 8238.285 ; gain = 0.000 ; free physical = 84 ; free virtual = 3193
+launch_runs synth_1 -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes}
+[Fri Aug  9 16:07:18 2019] Launched synth_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:17 . Memory (MB): peak = 8240.285 ; gain = 0.000 ; free physical = 83 ; free virtual = 3194
+exit
