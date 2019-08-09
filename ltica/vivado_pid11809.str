@@ -1,0 +1,146 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 11809
+License: Customer
+
+Current time: 	Thu Aug 08 20:52:06 JST 2019
+Time zone: 	Japan Standard Time (Asia/Tokyo)
+
+OS: CentOS Linux release 7.6.1810 (Core)
+OS Version: 3.10.0-957.1.3.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 12
+
+Display: localhost:10.0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 25 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/home/cad/xilinx-vivado-2018.3/Vivado/2018.3/tps/lnx64/jre9.0.4
+Java executable location: 	/home/cad/xilinx-vivado-2018.3/Vivado/2018.3/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kawamata
+User home directory: /home/users/kawamata
+User working directory: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/cad/xilinx-vivado-2018.3/Vivado
+HDI_APPROOT: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3
+RDI_DATADIR: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3/data
+RDI_BINDIR: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3/bin
+
+Vivado preferences file location: /home/users/kawamata/.Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: /home/users/kawamata/.Xilinx/Vivado/2018.3/
+Vivado layouts directory: /home/users/kawamata/.Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	/home/cad/xilinx-vivado-2018.3/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/vivado.log
+Vivado journal file location: 	/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-11809-parakeet
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@harrier
+XILINX_DSP: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3/ids_lite/ISE
+XILINX_EDK: /home/cad/xilinx-ise-14.7/14.7/ISE_DS/EDK
+XILINX_PLANAHEAD: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3
+XILINX_SDK: /home/cad/xilinx-vivado-2018.3/SDK/2018.3
+XILINX_VIVADO: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3
+XILINX_VIVADO_HLS: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,077 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 82 MB (+83094kb) [00:00:08]
+// [Engine Memory]: 5,070 MB (+5165259kb) [00:00:08]
+// aL (cp): Older Project Version: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1016 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 5,087 MB. GUI used memory: 41 MB. Current time: 8/8/19, 8:52:08 PM JST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// Opening Vivado Project: ltica/ltica.xpr. Version: Vivado v2018.2 
+// bx (cp):  Open Project : addNotify
+dismissDialog("Older Project Version"); // aL (cp)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project ltica/ltica.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project ltica/ltica.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [Project 1-230] Project 'ltica.xpr' upgraded for this version of Vivado. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/cad/xilinx-vivado-2018.3/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 107 MB (+21815kb) [00:00:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  1322 ms.
+// Project name: ltica; location: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica; part: xq7z020cl400-1I
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 6593.559 ; gain = 157.949 ; free physical = 4665 ; free virtual = 21546 
+dismissDialog("Open Project"); // bx (cp)
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cp)
+// [GUI Memory]: 113 MB (+845kb) [00:00:26]
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // af (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // af (cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "12", 11); // e (bc, f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 12 
+// Tcl Message: [Thu Aug  8 20:52:32 2019] Launched synth_1... Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 9 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aI (aF, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1209 ms.
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  1198 ms.

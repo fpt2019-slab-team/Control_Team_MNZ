@@ -1,0 +1,15 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri Aug  9 16:19:07 2019
+| Host         : duck running 64-bit unknown
+| Command      : report_bus_skew -warn_on_violation -file ltica_bus_skew_routed.rpt -pb ltica_bus_skew_routed.pb -rpx ltica_bus_skew_routed.rpx
+| Design       : ltica
+| Device       : xq7z020-cl400
+| Speed File   : -1I  PRODUCTION 1.10 2016-07-27
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

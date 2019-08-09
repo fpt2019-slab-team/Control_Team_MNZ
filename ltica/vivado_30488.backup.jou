@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Aug  8 20:39:21 2019
+# Process ID: 30488
+# Current directory: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica
+# Command line: vivado
+# Log file: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/vivado.log
+# Journal file: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project ltica /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica -part xq7z020cl400-1I
+add_files -norecurse {/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltable.sv /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/LED.v}
+add_files -fileset constrs_1 -norecurse /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/LED.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1

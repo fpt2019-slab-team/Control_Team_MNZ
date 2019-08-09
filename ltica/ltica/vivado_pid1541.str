@@ -1,0 +1,380 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 1541
+License: Customer
+
+Current time: 	Thu Aug 08 21:42:38 JST 2019
+Time zone: 	Japan Standard Time (Japan)
+
+OS: CentOS release 6.10 (Final)
+OS Version: 2.6.32-754.11.1.el6.x86_64
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: localhost:10.0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 30 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/home/cad/xilinx-vivado-2018.3/Vivado/2018.3/tps/lnx64/jre9.0.4
+Java executable location: 	/home/cad/xilinx-vivado-2018.3/Vivado/2018.3/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	kawamata
+User home directory: /home/users/kawamata
+User working directory: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/cad/xilinx-vivado-2018.3/Vivado
+HDI_APPROOT: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3
+RDI_DATADIR: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3/data
+RDI_BINDIR: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3/bin
+
+Vivado preferences file location: /home/users/kawamata/.Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: /home/users/kawamata/.Xilinx/Vivado/2018.3/
+Vivado layouts directory: /home/users/kawamata/.Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	/home/cad/xilinx-vivado-2018.3/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/vivado.log
+Vivado journal file location: 	/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-1541-hummingbird.cis.nagasaki-u.ac.jp
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@harrier
+XILINX_DSP: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3/ids_lite/ISE
+XILINX_EDK: /home/cad/xilinx-ise-14.7/14.7/ISE_DS/EDK
+XILINX_PLANAHEAD: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3
+XILINX_SDK: /home/cad/xilinx-vivado-2018.3/SDK/2018.3
+XILINX_VIVADO: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3
+XILINX_VIVADO_HLS: /home/cad/xilinx-vivado-2018.3/Vivado/2018.3
+
+
+GUI allocated memory:	155 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 5,046 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 80 MB (+81635kb) [00:00:05]
+// [Engine Memory]: 5,020 MB (+5112273kb) [00:00:05]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: ltica.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project ltica.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// HMemoryUtils.trashcanNow. Engine heap size: 5,074 MB. GUI used memory: 43 MB. Current time: 8/8/19, 9:42:40 PM JST
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project ltica.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/cad/xilinx-vivado-2018.3/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 100 MB (+16558kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  2425 ms.
+// Project name: ltica; location: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica; part: xq7z020cl400-1I
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 6518.375 ; gain = 156.531 ; free physical = 879 ; free virtual = 5640 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 105 MB (+348kb) [00:00:21]
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 5,248 MB. GUI used memory: 47 MB. Current time: 8/8/19, 9:42:55 PM JST
+// Elapsed time: 10 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  6 2018-23:53:53     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A939B6A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1502 ms.
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 6,026 MB (+791448kb) [00:00:39]
+dismissDialog("Auto Connect"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,042 MB. GUI used memory: 47 MB. Current time: 8/8/19, 9:43:10 PM JST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ak, bC)
+// Elapsed time: 14 seconds
+setFileChooser("/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/ltica.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/ltica.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 26 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+dismissDialog("Add Sources"); // c (cp)
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ltica (LED.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ltica (LED.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ltica (LED.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("LED.v", 296, 161); // cl (w, cp)
+selectCodeEditor("LED.v", 247, 192); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 6,065 MB. GUI used memory: 53 MB. Current time: 8/8/19, 9:45:00 PM JST
+// Elapsed time: 27 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // af (cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 6,088 MB. GUI used memory: 55 MB. Current time: 8/8/19, 9:45:35 PM JST
+selectRadioButton(PAResourceItoN.LaunchPanel_LAUNCH_RUNS_ON_REMOTE_HOSTS, "Launch runs on remote hosts"); // a (Q, f)
+selectButton(PAResourceItoN.LaunchPanel_CONFIGURE_HOSTS, "Configure Hosts"); // a (Q, f)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// F (f): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2544 ms.
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Help]", 5, false); // L (C, F)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Settings"); // F (f)
+selectButton(PAResourceItoN.LaunchPanel_CONFIGURE_HOSTS, "Configure Hosts"); // a (Q, f)
+// F (f): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1865 ms.
+// [GUI Memory]: 148 MB (+38653kb) [00:03:27]
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Remote Hosts]", 12); // L (C, F)
+collapseTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Remote Hosts]", 12); // L (C, F)
+selectButton((HResource) null, "Manual Configuration"); // h (Q, F)
+selectButton(PAResourceQtoS.SettingsRemoteHostsManualConfPage_ADD_NEW_REMOTE_HOST, "Add..."); // a (C, F)
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectTable(PAResourceQtoS.SettingsRemoteHostsManualConfPage_HOSTS_TABLE, "duck ; 1 ; true", 0, "1", 1); // cQ (Q, F)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (F)
+editTable(PAResourceQtoS.SettingsRemoteHostsManualConfPage_HOSTS_TABLE, "16", 0, "Jobs", 1); // cQ (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Settings"); // F (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'k' command handler elapsed time: 55 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Check Remote Hosts : addNotify
+// HOptionPane Error: 'Unable to launch runs, as none of the defined remote hosts can be accessed. Please resolve these connection issues before launching remotely. (ltica - [/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.xpr] - Vivado 2018.3)'
+selectButton("PAResourceEtoH.ExpRunMgr_UNABLE_TO_LAUNCH_RUNS_AS_NONE_OK", "OK"); // JButton (C, I)
+// Elapsed time: 131 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // af (cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// f (cp): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1101 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Check Remote Hosts : addNotify
+// bx (cp):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes} 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Aug  8 21:48:51 2019] Launched synth_1... Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 67 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton(PAResourceItoN.LaunchPanel_CONFIGURE_HOSTS, "Configure Hosts"); // a (Q, f)
+// F (f): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1673 ms.
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (F)
+dismissDialog("Settings"); // F (f)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'c' command handler elapsed time: 9 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Check Remote Hosts : addNotify
+// bx (cp):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes} 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 163 MB (+8756kb) [00:07:41]
+// Tcl Message: [Thu Aug  8 21:50:11 2019] Launched impl_1... Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 69 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1018 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 -host {duck 16} -remote_cmd {ssh -q -o BatchMode=yes} 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Aug  8 21:51:26 2019] Launched impl_1... Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LED.xdc]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, LED.xdc]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 42 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1336 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// HOptionPane Error: 'The file '/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/ impl_1/ltica.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // JButton (C, J)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// HOptionPane Error: 'The file '/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/ impl_1/ltica.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("RDIResource.HFileChooserPanel_FILE_DOES_NOT_EXIST_PLEASE_SPECIFY_OK", "OK"); // JButton (C, J)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ak, bC)
+dismissFileChooser();
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bC)
+// 'I' command handler elapsed time: 19 seconds
+dismissDialog("Program Device"); // bC (cp)
+// Elapsed time: 81 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LED.xdc", 1); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 133 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN, "Open Implemented Design"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+// WARNING: HEventQueue.dispatchEvent() is taking  1046 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1031 ms.
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/ltica.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 68 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LED.v", 0); // k (j, cp)
+selectCodeEditor("LED.v", 263, 202); // cl (w, cp)
+selectCodeEditor("LED.v", 182, 159); // cl (w, cp)
+selectCodeEditor("LED.v", 184, 133); // cl (w, cp)
+// Elapsed time: 41 seconds
+closeMainWindow("ltica - [/home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.xpr] - Vivado 2018.3"); // cp
+// al (cp): Save Project: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1168 ms.

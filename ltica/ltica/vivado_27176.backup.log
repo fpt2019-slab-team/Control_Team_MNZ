@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Aug  9 16:17:03 2019
+# Process ID: 27176
+# Current directory: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica
+# Command line: vivado ltica.xpr
+# Log file: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/vivado.log
+# Journal file: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project ltica.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/cad/xilinx-vivado-2018.3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 6704.031 ; gain = 242.715 ; free physical = 11382 ; free virtual = 22292
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Fri Aug  9 16:17:46 2019] Launched synth_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Fri Aug  9 16:18:21 2019] Launched impl_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Aug  9 16:19:16 2019] Launched impl_1...
+Run output will be captured here: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/ltica/ltica/ltica.runs/impl_1/runme.log
+open_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  9 16:27:27 2019...
