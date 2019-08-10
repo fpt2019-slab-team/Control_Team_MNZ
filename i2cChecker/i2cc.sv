@@ -1,6 +1,6 @@
 // target : DE2-115
 
-module i2sc(
+module i2cc(
 	input wire scl,
 	input wire sda,
 	input wire sw,
