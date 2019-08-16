@@ -4,7 +4,7 @@ module i2c_slave (
 	inout	wire sda,
 	input	wire scl,
 	output wire [7:0] led,
-	output wire [6:0] hxled [1:0]
+	output wire [6:0] hxled [3:0]
 );
 
 reg [3:0] state;
@@ -16,7 +16,7 @@ reg ack;
 wire compAddress;
 wire startSection;
 
-assign sda = ack;
+assign sda = ack ? 1'bz: 1'b0;
 assign compAddress = (myAddress == address);
 
 enc7led ad0(
@@ -30,10 +30,18 @@ enc7led ad1(
 	.leds(hxled[1])	
 );
 
+
+enc7led cc0(
+	.vinp(clkcnt),
+	.enchx(1'b1),
+	.leds(hxled[3])	
+);
+
+
 initial begin
 	state <= 4'b0;
 	address <=7'h00;
-	myAddress <=7'h03;
+	myAddress <=7'h1c;
 	clkcnt <= 4'b0;
 	rw <= 1'b0;
 	ack <= 1'b1;
@@ -53,7 +61,7 @@ always@ (posedge scl) begin
 			4'd6: address[6] <= sda;
 			4'd7: begin
 				rw <= sda;
-				if (compAddress)
+				if (1'b1)
 					ack <= 1'b0;
 				end
 			default: begin

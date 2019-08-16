@@ -72,4 +72,11 @@ set_global_assignment -name SYSTEMVERILOG_FILE i2c_slave.sv
 set_global_assignment -name SYSTEMVERILOG_FILE enc7led.sv
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_AD26 -to hxled[3][0]
+set_location_assignment PIN_AC27 -to hxled[3][1]
+set_location_assignment PIN_AD25 -to hxled[3][2]
+set_location_assignment PIN_AC25 -to hxled[3][3]
+set_location_assignment PIN_AB28 -to hxled[3][4]
+set_location_assignment PIN_AB25 -to hxled[3][5]
+set_location_assignment PIN_AB22 -to hxled[3][6]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

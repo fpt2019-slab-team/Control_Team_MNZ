@@ -1,5 +1,5 @@
 Analysis & Synthesis report for i2c_slave
-Fri Aug 16 15:18:42 2019
+Fri Aug 16 16:24:44 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -17,11 +17,12 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
   9. Registers Removed During Synthesis
  10. General Register Statistics
  11. Inverted Register Statistics
- 12. Port Connectivity Checks: "enc7led:ad1"
- 13. Port Connectivity Checks: "enc7led:ad0"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 12. Port Connectivity Checks: "enc7led:cc0"
+ 13. Port Connectivity Checks: "enc7led:ad1"
+ 14. Port Connectivity Checks: "enc7led:ad0"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -47,14 +48,14 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Aug 16 15:18:42 2019           ;
+; Analysis & Synthesis Status     ; Successful - Fri Aug 16 16:24:44 2019           ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                   ; i2c_slave                                       ;
 ; Top-level Entity Name           ; i2c_slave                                       ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
 ; Total registers                 ; 13                                              ;
-; Total pins                      ; 24                                              ;
+; Total pins                      ; 38                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -187,25 +188,25 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 18        ;
+; Estimate of Logic utilization (ALMs needed) ; 20        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 32        ;
+; Combinational ALUT usage for logic          ; 38        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 3         ;
+;     -- 6 input functions                    ; 2         ;
 ;     -- 5 input functions                    ; 9         ;
-;     -- 4 input functions                    ; 9         ;
+;     -- 4 input functions                    ; 16        ;
 ;     -- <=3 input functions                  ; 11        ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 13        ;
 ;                                             ;           ;
-; I/O pins                                    ; 24        ;
+; I/O pins                                    ; 38        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
-; Maximum fan-out node                        ; scl~input ;
-; Maximum fan-out                             ; 13        ;
-; Total fan-out                               ; 198       ;
-; Average fan-out                             ; 2.11      ;
+; Maximum fan-out node                        ; clkcnt[1] ;
+; Maximum fan-out                             ; 18        ;
+; Total fan-out                               ; 241       ;
+; Average fan-out                             ; 1.88      ;
 +---------------------------------------------+-----------+
 
 
@@ -214,9 +215,10 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------+-------------+--------------+
-; |i2c_slave                 ; 32 (18)             ; 13 (13)                   ; 0                 ; 0          ; 24   ; 0            ; |i2c_slave             ; i2c_slave   ; work         ;
+; |i2c_slave                 ; 38 (17)             ; 13 (13)                   ; 0                 ; 0          ; 38   ; 0            ; |i2c_slave             ; i2c_slave   ; work         ;
 ;    |enc7led:ad0|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |i2c_slave|enc7led:ad0 ; enc7led     ; work         ;
 ;    |enc7led:ad1|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |i2c_slave|enc7led:ad1 ; enc7led     ; work         ;
+;    |enc7led:cc0|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |i2c_slave|enc7led:cc0 ; enc7led     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -264,9 +266,18 @@ Encoding Type:  One-Hot
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; ack                                    ; 10      ;
+; ack                                    ; 2       ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
+
+
++-----------------------------------------+
+; Port Connectivity Checks: "enc7led:cc0" ;
++-------+-------+----------+--------------+
+; Port  ; Type  ; Severity ; Details      ;
++-------+-------+----------+--------------+
+; enchx ; Input ; Info     ; Stuck at VCC ;
++-------+-------+----------+--------------+
 
 
 +-------------------------------------------+
@@ -296,18 +307,18 @@ Encoding Type:  One-Hot
 ; arriav_ff             ; 13                          ;
 ;     plain             ; 13                          ;
 ; arriav_io_obuf        ; 1                           ;
-; arriav_lcell_comb     ; 34                          ;
-;     normal            ; 34                          ;
+; arriav_lcell_comb     ; 40                          ;
+;     normal            ; 40                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
 ;         3 data inputs ; 11                          ;
-;         4 data inputs ; 9                           ;
+;         4 data inputs ; 16                          ;
 ;         5 data inputs ; 9                           ;
-;         6 data inputs ; 3                           ;
-; boundary_port         ; 24                          ;
+;         6 data inputs ; 2                           ;
+; boundary_port         ; 38                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.47                        ;
+; Average LUT depth     ; 1.41                        ;
 +-----------------------+-----------------------------+
 
 
@@ -326,7 +337,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
-    Info: Processing started: Fri Aug 16 15:18:33 2019
+    Info: Processing started: Fri Aug 16 16:24:32 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off i2c_slave -c i2c_slave
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -334,16 +345,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file i2c_sla
     Info (12023): Found entity 1: i2c_slave File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file enc7led.sv
     Info (12023): Found entity 1: enc7led File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/enc7led.sv Line: 3
+Warning (10037): Verilog HDL or VHDL warning at i2c_slave.sv(64): conditional expression evaluates to a constant File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 64
 Info (12127): Elaborating entity "i2c_slave" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at i2c_slave.sv(13): object "rw" assigned a value but never read File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 13
 Warning (10034): Output port "led" at i2c_slave.sv(6) has no driver File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 6
+Warning (10034): Output port "hxled[2]" at i2c_slave.sv(8) has no driver File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 8
 Info (12128): Elaborating entity "enc7led" for hierarchy "enc7led:ad0" File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 26
-Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "sda" and its non-tri-state driver. File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 4
-Info (13060): One or more bidirectional pins are fed by always enabled tri-state buffers
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidirectional pin "sda" is moved to its source File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 4
-Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "sda~synth" File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 4
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "led[0]" is stuck at GND File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 6
     Warning (13410): Pin "led[1]" is stuck at GND File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 6
@@ -353,19 +360,26 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "led[5]" is stuck at GND File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 6
     Warning (13410): Pin "led[6]" is stuck at GND File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 6
     Warning (13410): Pin "led[7]" is stuck at GND File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 6
+    Warning (13410): Pin "hxled[2][0]" is stuck at GND File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 8
+    Warning (13410): Pin "hxled[2][1]" is stuck at GND File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 8
+    Warning (13410): Pin "hxled[2][2]" is stuck at GND File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 8
+    Warning (13410): Pin "hxled[2][3]" is stuck at GND File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 8
+    Warning (13410): Pin "hxled[2][4]" is stuck at GND File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 8
+    Warning (13410): Pin "hxled[2][5]" is stuck at GND File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 8
+    Warning (13410): Pin "hxled[2][6]" is stuck at GND File: /home/users/kawamata/myPrograms/git/Control_Team_MNZ/hw_i2c/i2c_slave.sv Line: 8
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 56 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 76 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 22 output pins
+    Info (21059): Implemented 36 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 32 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 1195 megabytes
-    Info: Processing ended: Fri Aug 16 15:18:42 2019
-    Info: Elapsed time: 00:00:09
+    Info (21061): Implemented 38 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 1197 megabytes
+    Info: Processing ended: Fri Aug 16 16:24:44 2019
+    Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:21
 
 
