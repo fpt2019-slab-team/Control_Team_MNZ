@@ -6,7 +6,7 @@
     I little changed enc7led.sv module 
 
   ```enc7led.sv
-      reg [6:0] outout;
+      reg [6:0] outout;     //I added this reg 
       assign leds = outout;
       always @* begin
         if (vinp < 4'd10) begin
