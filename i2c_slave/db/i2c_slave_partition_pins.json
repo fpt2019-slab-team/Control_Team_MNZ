@@ -1,0 +1,101 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hxled[0][0]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[0][1]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[0][2]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[0][3]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[0][4]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[0][5]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[0][6]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[1][0]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[1][1]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[1][2]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[1][3]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[1][4]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[1][5]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[1][6]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[3][0]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[3][1]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[3][2]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[3][3]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[3][4]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[3][5]",
+					"strict" : false
+				},
+				{
+					"name" : "hxled[3][6]",
+					"strict" : false
+				},
+				{
+					"name" : "sda",
+					"strict" : false
+				},
+				{
+					"name" : "scl",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
