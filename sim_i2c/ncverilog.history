@@ -1,0 +1,8 @@
+s1(17Aug2019:12:58:29):  ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv 
+s2(17Aug2019:13:01:07):  ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv 
+s3(17Aug2019:13:02:02):  ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv 
+s4(17Aug2019:13:04:08):  ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv 
+s5(17Aug2019:13:19:04):  ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv 
+s6(17Aug2019:13:29:24):  ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv 
+s7(17Aug2019:13:30:39):  ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv 
+s8(17Aug2019:13:32:02):  ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv 
