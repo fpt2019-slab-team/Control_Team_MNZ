@@ -1,0 +1,15 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(18Aug2019:10:42:28):( ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv )
+s2::(18Aug2019:10:43:31):( ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv )
+s3::(18Aug2019:10:44:55):( ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv )
+s4::(18Aug2019:10:52:39):( ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv )
+s5::(18Aug2019:10:54:15):( ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv )
+s6::(18Aug2019:10:54:40):( ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv )
+s7::(18Aug2019:10:54:57):( ncverilog +access+r+w i2c_sim.sv i2c_slave.v enc7led.sv )
+s8::(18Aug2019:10:55:16):( ncverilog +access+r+w i2c_sim.sv i2c_slave.v enc7led.sv )
+s9::(18Aug2019:10:56:57):( ncverilog +access+r+w i2c_sim.sv i2c_slave.v enc7led.sv )
+s10::(18Aug2019:10:57:17):( ncverilog +access+r+w i2c_sim.sv i2c_slave.v enc7led.sv )
+s11::(18Aug2019:10:58:46):( ncverilog +access+r+w i2c_sim.sv i2c_slave.v enc7led.sv )

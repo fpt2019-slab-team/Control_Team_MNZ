@@ -1,0 +1,19 @@
+//
+// File created by:  xmverilog
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.18.09.d
+-RUNMODE
+i2c_sim.sv
+i2c_slave.v
+enc7led.sv
+-CDSLIB
+./xcelium.d/run.lnx8664.18.09.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.18.09.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.18.09.d/xllibs
+-ALLOWUNBOUND
