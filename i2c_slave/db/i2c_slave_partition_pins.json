@@ -124,11 +124,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "sysclk",
+					"name" : "rst",
 					"strict" : false
 				},
 				{
-					"name" : "rst",
+					"name" : "sysclk",
 					"strict" : false
 				}
 			]

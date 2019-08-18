@@ -1,11 +1,11 @@
-Fitter Status : Successful - Sun Aug 18 13:22:32 2019
+Fitter Status : Successful - Sun Aug 18 19:33:14 2019
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 Revision Name : i2c_slave
 Top-level Entity Name : i2c_slave
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 40 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 41 / 32,070 ( < 1 % )
 Total registers : 17
 Total pins : 41 / 457 ( 9 % )
 Total virtual pins : 0
