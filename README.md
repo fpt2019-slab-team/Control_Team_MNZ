@@ -6,22 +6,39 @@
     I little changed enc7led.sv module 
 
   ```enc7led.sv
-      reg [6:0] outout;     //I added this reg 
-      assign leds = outout;
-      always @* begin
-        if (vinp < 4'd10) begin
+  module enc7led(
+  input wire [3:0]   vinp,
+  input wire 	     enchx,
+  output logic [6:0] leds    //changed here
+  );
+
+  always_comb begin          //changed here
+    if (vinp < 4'd10) begin
       case (vinp)
-        4'd0: outout = 7'b1000000;
-        4'd1: outout = 7'b1111001;
-        4'd2: outout = 7'b0100100;
-        4'd3: outout = 7'b0110000;
-        4'd4: outout = 7'b0011001;
-        4'd5: outout = 7'b0010010;
-        4'd6: outout = 7'b0000010;
-        4'd7: outout = 7'b1011000;
-        4'd9: outout = 7'b0010000;
-        default: outout = 7'b0000000;
-        endcase
+        4'd0: leds <= 7'b1000000;
+        4'd1: leds <= 7'b1111001;
+        4'd2: leds <= 7'b0100100;
+        4'd3: leds <= 7'b0110000;
+        4'd4: leds <= 7'b0011001;
+        4'd5: leds <= 7'b0010010;
+        4'd6: leds <= 7'b0000010;
+        4'd7: leds <= 7'b1011000;
+        4'd9: leds <= 7'b0010000;
+        default: leds <= 7'b0000000;
+      endcase
+    end else if (enchx) begin
+      case (vinp)
+        4'd10: leds <= 7'b0001000;
+        4'd11: leds <= 7'b0000011;
+        4'd12: leds <= 7'b1000110;
+        4'd13: leds <= 7'b0100001;
+        4'd15: leds <= 7'b0001110;
+        default: leds <= 7'b0000110;
+      endcase
+    end else begin
+      leds <= 7'b1001001;
+    end
+  end
   ```
 
 ## Tool
