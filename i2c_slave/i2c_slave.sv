@@ -58,6 +58,7 @@ always@ (posedge sysclk) begin
 	// negedge sda
 	if (bsda & !sda) begin
 		// START
+		if (state != 4'd2) begein
 		if (sck) begin
 			state <= 4'b1;
 
@@ -65,6 +66,7 @@ always@ (posedge sysclk) begin
 			clkcnt <= 4'b0;
 
 		end
+	end
 	end
 
 	// posedge sda
