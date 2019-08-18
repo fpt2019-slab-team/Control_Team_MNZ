@@ -1,5 +1,5 @@
 Flow report for i2c_slave
-Fri Aug 16 16:25:27 2019
+Sun Aug 18 13:22:55 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
 
 
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Fri Aug 16 16:25:27 2019           ;
+; Flow Status                     ; Successful - Sun Aug 18 13:22:55 2019           ;
 ; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
 ; Revision Name                   ; i2c_slave                                       ;
 ; Top-level Entity Name           ; i2c_slave                                       ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA5F31C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 21 / 32,070 ( < 1 % )                           ;
-; Total registers                 ; 18                                              ;
-; Total pins                      ; 38 / 457 ( 8 % )                                ;
+; Logic utilization (in ALMs)     ; 40 / 32,070 ( < 1 % )                           ;
+; Total registers                 ; 17                                              ;
+; Total pins                      ; 41 / 457 ( 9 % )                                ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                           ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                                  ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/16/2019 16:24:33 ;
+; Start date & time ; 08/18/2019 13:21:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; i2c_slave           ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 5025763270028.156594027300938          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 71126652638916.156610211118938         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -98,12 +98,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 1180 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:26     ; 1.0                     ; 2851 MB             ; 00:00:51                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 1066 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 1361 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1241 MB             ; 00:00:01                           ;
-; Total                ; 00:00:49     ; --                      ; --                  ; 00:01:22                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 1150 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:29     ; 1.0                     ; 2849 MB             ; 00:01:02                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 1072 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:09     ; 1.1                     ; 1359 MB             ; 00:00:05                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1244 MB             ; 00:00:01                           ;
+; Total                ; 00:00:57     ; --                      ; --                  ; 00:01:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -112,11 +112,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+--------------+--------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name      ; OS Version   ; Processor type ;
 +----------------------+------------------+--------------+--------------+----------------+
-; Analysis & Synthesis ; cardinal         ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; Fitter               ; cardinal         ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; Assembler            ; cardinal         ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; Timing Analyzer      ; cardinal         ; CentOS Linux ; CentOS Linux ; x86_64         ;
-; EDA Netlist Writer   ; cardinal         ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; Analysis & Synthesis ; phoenix          ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; Fitter               ; phoenix          ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; Assembler            ; phoenix          ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; Timing Analyzer      ; phoenix          ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; EDA Netlist Writer   ; phoenix          ; CentOS Linux ; CentOS Linux ; x86_64         ;
 +----------------------+------------------+--------------+--------------+----------------+
 
 

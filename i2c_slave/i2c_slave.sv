@@ -2,8 +2,10 @@
 
 module i2c_slave (
 	input wire sysclk,
-	inout	wire sda,
-	input	wire scl,
+	inout	wire sda, // GPIO 1
+	input	wire scl, // GPIO 0
+	input wire rst,
+	output wire gnd,
 	output wire [7:0] led,
 	output wire [6:0] hxled [3:0]
 );
@@ -22,6 +24,7 @@ wire startSection;
 
 assign sda = ack ? 1'bz: 1'b0;
 assign compAddress = (myAddress == address);
+assign gnt = 1'b0;
 
 enc7led ad0(
 	.vinp(address[3:0]),
@@ -35,6 +38,12 @@ enc7led ad1(
 );
 
 
+enc7led lst(
+	.vinp(state),
+	.enchx(1'b1),
+	.leds(hxled[2])	
+);
+
 enc7led cc0(
 	.vinp(clkcnt),
 	.enchx(1'b1),
@@ -45,7 +54,7 @@ enc7led cc0(
 initial begin
 	state <= 4'b0;
 	address <=7'h00;
-	myAddress <=7'h1c;
+	myAddress <=7'h42;
 	clkcnt <= 4'b0;
 	rw <= 1'b0;
 	ack <= 1'b1;
@@ -53,13 +62,18 @@ end
 
 always@ (posedge sysclk) begin
 	bsda <= sda;
-	bscl <= bscl;
+	bscl <= scl;
+	
+	if (!rst) begin
+		state <= 4'hF;
+	end
+	else begin
 
 	// negedge sda
-	if (bsda & !sda) begin
+	if (bsda &&	!sda) begin
 		// START
-		if (state != 4'd2) begein
-		if (sck) begin
+		if (state != 4'd2) begin
+		if (scl) begin
 			state <= 4'b1;
 
 			address <= 7'b0;
@@ -70,18 +84,21 @@ always@ (posedge sysclk) begin
 	end
 
 	// posedge sda
-	if (!bsda & sda) begin
+	if (!bsda && sda) begin
 		// STOP
-		if (sck) begin
+		if (scl) begin
+		if (state != 4'd2)
 			state <= 4'hF;
 		end
 	end
 
 	// posedge scl
-	if (!bscl & scl) begin
+	if (!bscl && scl) begin
 		
 		// COUNT 8
 
+	if (state == 4'd1) begin
+	
 		if (clkcnt == 4'd8) begin
 				clkcnt <= 4'b0;
 				ack <= 1'b1;
@@ -96,7 +113,6 @@ always@ (posedge sysclk) begin
 			clkcnt <= clkcnt + 4'b1;
 
 			// CATCH ADDRESS
-			if (state == 4'b1) begin
 				if (clkcnt < 4'd7) begin
 					address[clkcnt] <= sda;
 				end
@@ -107,7 +123,7 @@ always@ (posedge sysclk) begin
 					end
 				end
 			end
-
+end
 
 		end
 	end
