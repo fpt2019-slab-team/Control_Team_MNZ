@@ -2,7 +2,7 @@
 all:sim
 
 sim:
-	ncverilog +access+r+w i2c_sim.v i2c_slave.v enc7led.sv
+	ncverilog +access+r+w i2c_sim.sv i2c_slave.v enc7led.sv
 bram:
 	ncverilog +access+r+w RS232C_BRAM_sim.v RS232C_BRAM.v v_rams_14.v
 clean:

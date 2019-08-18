@@ -1,0 +1,8 @@
+//
+// File created by:  xmverilog
+// Do not modify this file
+//
++access+r+w
+i2c_sim.sv
+i2c_slave.v
+enc7led.sv
