@@ -19,7 +19,7 @@ module count
    
    
    always_ff@(posedge clk)begin//cnt
-      if( KEY[0] )
+      if( KEY[0] != 1)
 	cnt <= 0;
       else if(sw[2] == 1'b0 ) begin
 //      else begin
@@ -31,7 +31,7 @@ module count
    end
 
    always_ff@(posedge clk)begin//num4
-      if( KEY[0] )
+      if( KEY[0] != 1 )
 	num4 <= 0;
       else if( sw[0] == 1'b0 ) begin // nor
 	 if(cnt == 1'b0 && num4 != 4'd9)
@@ -48,7 +48,7 @@ module count
    end
 
    always_ff@(posedge clk)begin//num3
-      if( KEY[0] )
+      if( KEY[0] != 1 )
 	num3 <= 0;
       else if( sw[0] == 1'b0)begin//nor
 	 if(cnt == 1'b0 && num3 != 4'd9 && num4 == 4'd9)
@@ -65,7 +65,7 @@ module count
    end
    
    always_ff@(posedge clk)begin//num2
-      if( KEY[0] )
+      if( KEY[0] != 1 )
 	num2 <= 0;
       else if( sw[0] == 1'b0 )begin//nor
 	 if(cnt == 1'b0 && num2 != 4'd9 && num3 == 4'd9 && num4 == 4'd9)
@@ -83,7 +83,7 @@ module count
    
 
    always_ff@(posedge clk)begin//num1
-      if( KEY[0] )
+      if( KEY[0] != 1 )
 	num1 <= 0;
       else if( sw[0] == 0)begin//nor
 	 if(cnt == 1'b0 && num1 != 4'd9 && num2 == 4'd9 && num3 == 4'd9 && num4 ==4'd9)
@@ -117,17 +117,17 @@ module decode_7seg
    
    always_comb begin
       case (din)
-        4'd0:    dout <= 7'b0111111;
-        4'd1:    dout <= 7'b0000110;
-        4'd2:    dout <= 7'b1011011;
-        4'd3:    dout <= 7'b1001111;
-        4'd4:    dout <= 7'b1100110;
-        4'd5:    dout <= 7'b1101101;
-	4'd6:    dout <= 7'b1111101;
-	4'd7:    dout <= 7'b0000111;
-	4'd8:    dout <= 7'b1111111;
-	4'd9:    dout <= 7'b1101111;
-        default: dout <= 7'b0000000;
+        4'd0:    dout <= 7'b1000000;
+        4'd1:    dout <= 7'b1111001;
+        4'd2:    dout <= 7'b0100100;
+        4'd3:    dout <= 7'b0110000;
+        4'd4:    dout <= 7'b0011001;
+        4'd5:    dout <= 7'b0010010;
+	4'd6:    dout <= 7'b0000010;
+	4'd7:    dout <= 7'b1111000;
+	4'd8:    dout <= 7'b0000000;
+	4'd9:    dout <= 7'b0010000;
+        default: dout <= 7'b1111111;
       endcase
    end
 endmodule
