@@ -1,0 +1,125 @@
+|i2c_slave
+sda <> sda
+scl => address[0].CLK
+scl => address[1].CLK
+scl => address[2].CLK
+scl => address[3].CLK
+scl => address[4].CLK
+scl => address[5].CLK
+scl => address[6].CLK
+scl => ack.CLK
+scl => clkcnt[0].CLK
+scl => clkcnt[1].CLK
+scl => clkcnt[2].CLK
+scl => clkcnt[3].CLK
+scl => state~3.DATAIN
+led[0] <= <GND>
+led[1] <= <GND>
+led[2] <= <GND>
+led[3] <= <GND>
+led[4] <= <GND>
+led[5] <= <GND>
+led[6] <= <GND>
+led[7] <= <GND>
+hxled[0][0] <= enc7led:ad0.leds
+hxled[0][1] <= enc7led:ad0.leds
+hxled[0][2] <= enc7led:ad0.leds
+hxled[0][3] <= enc7led:ad0.leds
+hxled[0][4] <= enc7led:ad0.leds
+hxled[0][5] <= enc7led:ad0.leds
+hxled[0][6] <= enc7led:ad0.leds
+hxled[1][0] <= enc7led:ad1.leds
+hxled[1][1] <= enc7led:ad1.leds
+hxled[1][2] <= enc7led:ad1.leds
+hxled[1][3] <= enc7led:ad1.leds
+hxled[1][4] <= enc7led:ad1.leds
+hxled[1][5] <= enc7led:ad1.leds
+hxled[1][6] <= enc7led:ad1.leds
+hxled[2][0] <= <GND>
+hxled[2][1] <= <GND>
+hxled[2][2] <= <GND>
+hxled[2][3] <= <GND>
+hxled[2][4] <= <GND>
+hxled[2][5] <= <GND>
+hxled[2][6] <= <GND>
+hxled[3][0] <= enc7led:cc0.leds
+hxled[3][1] <= enc7led:cc0.leds
+hxled[3][2] <= enc7led:cc0.leds
+hxled[3][3] <= enc7led:cc0.leds
+hxled[3][4] <= enc7led:cc0.leds
+hxled[3][5] <= enc7led:cc0.leds
+hxled[3][6] <= enc7led:cc0.leds
+
+
+|i2c_slave|enc7led:ad0
+vinp[0] => LessThan0.IN8
+vinp[0] => Decoder0.IN3
+vinp[1] => LessThan0.IN7
+vinp[1] => Decoder0.IN2
+vinp[2] => LessThan0.IN6
+vinp[2] => Decoder0.IN1
+vinp[3] => LessThan0.IN5
+vinp[3] => Decoder0.IN0
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|i2c_slave|enc7led:ad1
+vinp[0] => LessThan0.IN8
+vinp[0] => Decoder0.IN3
+vinp[1] => LessThan0.IN7
+vinp[1] => Decoder0.IN2
+vinp[2] => LessThan0.IN6
+vinp[2] => Decoder0.IN1
+vinp[3] => LessThan0.IN5
+vinp[3] => Decoder0.IN0
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|i2c_slave|enc7led:cc0
+vinp[0] => LessThan0.IN8
+vinp[0] => Decoder0.IN3
+vinp[1] => LessThan0.IN7
+vinp[1] => Decoder0.IN2
+vinp[2] => LessThan0.IN6
+vinp[2] => Decoder0.IN1
+vinp[3] => LessThan0.IN5
+vinp[3] => Decoder0.IN0
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+
+
