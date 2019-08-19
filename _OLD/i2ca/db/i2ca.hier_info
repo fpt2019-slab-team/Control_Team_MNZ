@@ -1,0 +1,283 @@
+|i2ca
+scl => sclcnt[0].CLK
+scl => sclcnt[1].CLK
+scl => sclcnt[2].CLK
+scl => sclcnt[3].CLK
+scl => sclcnt[4].CLK
+scl => sclcnt[5].CLK
+scl => sclcnt[6].CLK
+scl => sclcnt[7].CLK
+scl => sclcnt[8].CLK
+scl => sclcnt[9].CLK
+scl => sclcnt[10].CLK
+scl => sclcnt[11].CLK
+scl => sclcnt[12].CLK
+scl => sclcnt[13].CLK
+scl => sclcnt[14].CLK
+scl => sclcnt[15].CLK
+sda => sdacnt[0].CLK
+sda => sdacnt[1].CLK
+sda => sdacnt[2].CLK
+sda => sdacnt[3].CLK
+sda => sdacnt[4].CLK
+sda => sdacnt[5].CLK
+sda => sdacnt[6].CLK
+sda => sdacnt[7].CLK
+sda => sdacnt[8].CLK
+sda => sdacnt[9].CLK
+sda => sdacnt[10].CLK
+sda => sdacnt[11].CLK
+sda => sdacnt[12].CLK
+sda => sdacnt[13].CLK
+sda => sdacnt[14].CLK
+sda => sdacnt[15].CLK
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+sw => hxled.OUTPUTSELECT
+hxled[0][0] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[0][1] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[0][2] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[0][3] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[0][4] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[0][5] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[0][6] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[1][0] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[1][1] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[1][2] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[1][3] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[1][4] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[1][5] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[1][6] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[2][0] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[2][1] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[2][2] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[2][3] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[2][4] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[2][5] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[2][6] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[3][0] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[3][1] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[3][2] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[3][3] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[3][4] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[3][5] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+hxled[3][6] <= hxled.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|i2ca|enc7led:gcenc[0].e7lc
+vinp[0] => LessThan0.IN8
+vinp[0] => Decoder0.IN3
+vinp[1] => LessThan0.IN7
+vinp[1] => Decoder0.IN2
+vinp[2] => LessThan0.IN6
+vinp[2] => Decoder0.IN1
+vinp[3] => LessThan0.IN5
+vinp[3] => Decoder0.IN0
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|i2ca|enc7led:gcenc[1].e7lc
+vinp[0] => LessThan0.IN8
+vinp[0] => Decoder0.IN3
+vinp[1] => LessThan0.IN7
+vinp[1] => Decoder0.IN2
+vinp[2] => LessThan0.IN6
+vinp[2] => Decoder0.IN1
+vinp[3] => LessThan0.IN5
+vinp[3] => Decoder0.IN0
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|i2ca|enc7led:gcenc[2].e7lc
+vinp[0] => LessThan0.IN8
+vinp[0] => Decoder0.IN3
+vinp[1] => LessThan0.IN7
+vinp[1] => Decoder0.IN2
+vinp[2] => LessThan0.IN6
+vinp[2] => Decoder0.IN1
+vinp[3] => LessThan0.IN5
+vinp[3] => Decoder0.IN0
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|i2ca|enc7led:gcenc[3].e7lc
+vinp[0] => LessThan0.IN8
+vinp[0] => Decoder0.IN3
+vinp[1] => LessThan0.IN7
+vinp[1] => Decoder0.IN2
+vinp[2] => LessThan0.IN6
+vinp[2] => Decoder0.IN1
+vinp[3] => LessThan0.IN5
+vinp[3] => Decoder0.IN0
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|i2ca|enc7led:gdenc[0].e7ld
+vinp[0] => LessThan0.IN8
+vinp[0] => Decoder0.IN3
+vinp[1] => LessThan0.IN7
+vinp[1] => Decoder0.IN2
+vinp[2] => LessThan0.IN6
+vinp[2] => Decoder0.IN1
+vinp[3] => LessThan0.IN5
+vinp[3] => Decoder0.IN0
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|i2ca|enc7led:gdenc[1].e7ld
+vinp[0] => LessThan0.IN8
+vinp[0] => Decoder0.IN3
+vinp[1] => LessThan0.IN7
+vinp[1] => Decoder0.IN2
+vinp[2] => LessThan0.IN6
+vinp[2] => Decoder0.IN1
+vinp[3] => LessThan0.IN5
+vinp[3] => Decoder0.IN0
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|i2ca|enc7led:gdenc[2].e7ld
+vinp[0] => LessThan0.IN8
+vinp[0] => Decoder0.IN3
+vinp[1] => LessThan0.IN7
+vinp[1] => Decoder0.IN2
+vinp[2] => LessThan0.IN6
+vinp[2] => Decoder0.IN1
+vinp[3] => LessThan0.IN5
+vinp[3] => Decoder0.IN0
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|i2ca|enc7led:gdenc[3].e7ld
+vinp[0] => LessThan0.IN8
+vinp[0] => Decoder0.IN3
+vinp[1] => LessThan0.IN7
+vinp[1] => Decoder0.IN2
+vinp[2] => LessThan0.IN6
+vinp[2] => Decoder0.IN1
+vinp[3] => LessThan0.IN5
+vinp[3] => Decoder0.IN0
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+enchx => leds.OUTPUTSELECT
+leds[0] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+
+
