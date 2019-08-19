@@ -1,0 +1,170 @@
+xmverilog(64): 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmverilog	18.09-s011: Started on Aug 19, 2019 at 14:49:40 JST
+ncverilog
+	+access+r
+	sim_count.sv
+	count.sv
+xmverilog: *W,NCEXDEP: Executable (ncverilog) is deprecated. Use (xmverilog) instead.
+Recompiling... reason: file './sim_count.sv' is newer than expected.
+	expected: Mon Aug 19 14:36:20 2019
+	actual:   Mon Aug 19 14:49:36 2019
+file: sim_count.sv
+	module worklib.sim_count:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+       .hex1(hex1),
+                |
+xmelab: *W,CUVMPW (./sim_count.sv,16|16): port sizes differ in port connection (8/7).
+       .hex2(hex2),
+                |
+xmelab: *W,CUVMPW (./sim_count.sv,17|16): port sizes differ in port connection (8/7).
+       .hex3(hex3),
+                |
+xmelab: *W,CUVMPW (./sim_count.sv,18|16): port sizes differ in port connection (8/7).
+       .hex4(hex4)   
+                |
+xmelab: *W,CUVMPW (./sim_count.sv,19|16): port sizes differ in port connection (8/7).
+   decode_7seg decode_7seg_inst1(.din(num1), .dout(hex1));
+                                                      |
+xmelab: *W,CUVMPW (./count.sv,100|54): port sizes differ in port connection (7/8).
+   decode_7seg decode_7seg_inst2(.din(num2), .dout(hex2));
+                                                      |
+xmelab: *W,CUVMPW (./count.sv,101|54): port sizes differ in port connection (7/8).
+   decode_7seg decode_7seg_inst3(.din(num3), .dout(hex3));
+                                                      |
+xmelab: *W,CUVMPW (./count.sv,102|54): port sizes differ in port connection (7/8).
+   decode_7seg decode_7seg_inst4(.din(num4), .dout(hex4));
+                                                      |
+xmelab: *W,CUVMPW (./count.sv,103|54): port sizes differ in port connection (7/8).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.sim_count:sv <0x52b3ef26>
+			streams:  19, words: 10393
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 6       3
+		Registers:              16      13
+		Scalar wires:            1       -
+		Expanded wires:         60       8
+		Vectored wires:          6       -
+		Always blocks:           9       6
+		Initial blocks:          3       3
+		Pseudo assignments:      8       8
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.sim_count:sv
+Loading snapshot worklib.sim_count:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/cad/cadence-xcelium-18.09.001/tools/xcelium/files/xmsimrc
+xcelium> run
+count = [ 0 0 0 1]    0
+count = [ 0 0 0 2]    0
+count = [ 0 0 0 3]    0
+count = [ 0 0 0 4]    0
+count = [ 0 0 0 5]    0
+count = [ 0 0 0 6]    0
+count = [ 0 0 0 7]    0
+count = [ 0 0 0 8]    0
+count = [ 0 0 0 9]    0
+sw[0] <= 1
+count = [ 0 0 1 0]    0
+count = [ 0 0 0 9]    0
+count = [ 0 0 0 8]    0
+count = [ 0 0 0 7]    0
+count = [ 0 0 0 6]    0
+count = [ 0 0 0 5]    0
+count = [ 0 0 0 4]    0
+count = [ 0 0 0 3]    0
+sw[0] <= 0
+sw[1] <= 1
+count = [ 0 0 0 2]    0
+count = [ 0 0 0 4]    0
+count = [ 0 0 0 6]    0
+count = [ 0 0 0 8]    0
+count = [ 0 0 1 0]    0
+count = [ 0 0 1 2]    0
+count = [ 0 0 1 4]    0
+count = [ 0 0 1 6]    0
+count = [ 0 0 1 8]    0
+count = [ 0 0 2 0]    0
+sw[0] <= 1
+count = [ 0 0 2 2]    0
+sw[2] <= 1
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+count = [ 0 0 2 0]   24
+Simulation complete via $finish(1) at time 100 US + 0
+./sim_count.sv:33       $finish;
+xcelium> exit
+TOOL:	xmverilog	18.09-s011: Exiting on Aug 19, 2019 at 14:49:43 JST  (total: 00:00:03)

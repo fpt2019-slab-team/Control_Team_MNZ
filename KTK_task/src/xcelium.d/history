@@ -1,0 +1,7 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(19Aug2019:14:47:06):( ncverilog +access+r sim_count.sv count.sv )
+s2::(19Aug2019:14:48:48):( ncverilog +access+r sim_count.sv count.sv )
+s3::(19Aug2019:14:49:41):( ncverilog +access+r sim_count.sv count.sv )
