@@ -36,16 +36,15 @@ module sim_count();
    
 
    initial begin
-      KEY[0] <= 1;
+      KEY[0] <= 0;
       
       #30
-	KEY[0] <= 0;
+	KEY[0] <= 1;
       
       repeat (9999) begin
 	 #1000
 	   print();
 	   ;
-	 
       end
    end
 
