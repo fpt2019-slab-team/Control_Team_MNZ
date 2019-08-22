@@ -4,7 +4,7 @@ module pwmc (
 	output wire pulse
 );
 
-reg [9:0] cnt;
+reg [10:0] cnt;
 wire [10:0] qc = {1'b1, vq} - {1'b0, cnt};
 
 assign pulse = qc[10];

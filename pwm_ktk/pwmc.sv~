@@ -1,0 +1,21 @@
+module pwmc (
+	     input wire       clk,
+	     input wire [9:0] vq,
+	     output wire      pulse
+);
+
+   reg [12:0] 		      cnt;
+
+
+
+
+
+   always @(posedge clk) begin
+      cnt <= cnt + 10'b1;
+   end
+
+   initial begin
+      cnt = 10'b0;
+   end
+
+endmodule

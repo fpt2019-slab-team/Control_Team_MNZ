@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "linux64",
+		"os_name" : "CentOS release",
+		"os_version" : "6"
+	},
+	"error" : {
+		"executable" : "quartus_eda",
+		"comment" : "not_applicable",
+		"error_message" : "m_port_info.num_of_dimensions() == 1",
+		"source_file" : "/quartus/neto/wsc/wsc_port.cpp",
+		"line" : "409",
+		"stack_trace" : "\t0x7f86ee891b03: neto_wsc + 0x58b03 (_ZNK8WSC_PORT8left_bitEv + 0x31)\n\t0x7f86f3cd9bd2: neto_vlgo + 0x4cbd2 (_ZN14VLGO_SV_WRITER18write_port_declareEP8WSC_PORTRK10QEDAU_UTIL + 0x126)\n\t0x7f86f3cbfd57: neto_vlgo + 0x32d57 (_ZN11VLGO_WRITER23write_port_declarationsEP18WSC_HIERARCHY_INFORK10QEDAU_UTIL + 0x77)\n\t0x7f86f3cc46fa: neto_vlgo + 0x376fa (_ZN11VLGO_WRITER20write_module_declareEP18WSC_HIERARCHY_INFORK10QEDAU_UTIL + 0x16a)\n\t0x7f86f3ccf896: neto_vlgo + 0x42896 (_ZN11VLGO_WRITER12write_moduleEP18WSC_HIERARCHY_INFORK10QEDAU_UTIL + 0x8e)\n\t0x7f86f3cc7843: neto_vlgo + 0x3a843 (_ZN11VLGO_WRITER10write_fileERK10QEDAU_UTIL + 0xa7b)\n\t   0x430574: quartus_eda + 0x30574 (_ZN11QNETO_START25generate_simulation_filesE16WSC_NETLIST_TYPERK10QEDAU_UTIL15DEV_FAMILY_ENUM + 0xe16)\n\t   0x432079: quartus_eda + 0x32079 (_ZN11QNETO_START25generate_simulation_filesE14QEDA_CALL_TYPERK10QEDAU_UTIL + 0x4f1)\n\t   0x438889: quartus_eda + 0x38889 (_ZN11QNETO_START18generate_eda_filesE14QEDA_CALL_TYPERK10QEDAU_UTIL + 0x39)\n\t   0x43e9dd: quartus_eda + 0x3e9dd (_Z22generate_all_eda_filesP10CMP_FACADERK10QEDAU_UTIL + 0x45)\n\t   0x44080e: quartus_eda + 0x4080e (_Z13qneto_executeP10CMP_FACADEPKcbbSsSsSsbRK10QEDAU_UTIL + 0x1c82)\n\t   0x412a50: quartus_eda + 0x12a50 (_ZN15QNETO_FRAMEWORK7executeEv + 0x52a)\n\t0x7f86e6fd275b: comp_qexe + 0x1c75b (_Z18qexe_standard_mainP14QEXE_FRAMEWORKPPK22QEXE_OPTION_DEFINITIONiPPKc + 0x888)\n\t   0x412e01: quartus_eda + 0x12e01 (_Z10qneto_mainiPPKc + 0x9b)\n\t0x7f86c460f720: ccl_msg + 0x40720 (_Z15msg_main_threadPv + 0x10)\n\t0x7f86c196702c: ccl_thr + 0x602c (thr_final_wrapper + 0xc)\n\t0x7f86c460f7df: ccl_msg + 0x407df (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)\n\t0x7f86c1fd8559: ccl_mem + 0xa559 (_Z18mem_thread_wrapperPFPvS_ES_ + 0x99)\n\t0x7f86c1da5f92: ccl_err + 0x8f92 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)\n\t0x7f86c19673f2: ccl_thr + 0x63f2 (thr_thread_wrapper + 0x15)\n\t0x7f86c46117e2: ccl_msg + 0x427e2 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xa3)\n\t   0x41aa18: quartus_eda + 0x1aa18 (main + 0x26)\n\t0x7f86bc71bd20: c.so.6 + 0x1ed20 (__libc_start_main + 0x100)\n\t   0x410e79: quartus_eda + 0x10e79\n",
+		"subsystem" : "WSC"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "18.0.0",
+		"build" : "614",
+		"edition" : "Standard Edition"
+	}
+}
