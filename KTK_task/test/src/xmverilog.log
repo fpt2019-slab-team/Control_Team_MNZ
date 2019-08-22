@@ -1,0 +1,27 @@
+xmverilog(64): 18.09-s011: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xmverilog	18.09-s011: Started on Aug 19, 2019 at 16:19:35 JST
+ncverilog
+	+access+r
+	sim_count.sv
+	count.sv
+xmverilog: *W,NCEXDEP: Executable (ncverilog) is deprecated. Use (xmverilog) instead.
+file: sim_count.sv
+       .hex[3:0](hex[3:0])
+           |
+xmvlog: *E,EXPLPA (sim_count.sv,16|11): expecting a left parenthesis ('(') [12.3.4(IEEE)].
+       .hex[3:0](hex[3:0])
+           |
+xmvlog: *E,ILLPRI (sim_count.sv,16|11): illegal expression primary [4.2(IEEE)].
+       .hex[3:0](hex[3:0])
+             |
+xmvlog: *E,EXPRPA (sim_count.sv,16|13): expecting a right parenthesis (')') [12.3.4(IEEE)].
+       .hex[3:0](hex[3:0])
+             |
+xmvlog: *E,EXPRPA (sim_count.sv,16|13): expecting a right parenthesis (')') [12.1.2][7.1(IEEE)].
+       );
+       |
+xmvlog: *E,EXPSMC (sim_count.sv,17|7): expecting a semicolon (';') [12.1.2][7.1(IEEE)].
+	module worklib.sim_count:sv
+		errors: 5, warnings: 0
+xmverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	xmverilog	18.09-s011: Exiting on Aug 19, 2019 at 16:19:36 JST  (total: 00:00:01)
