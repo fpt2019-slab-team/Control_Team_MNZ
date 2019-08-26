@@ -25,12 +25,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="459.20574"
-     inkscape:cy="489.09058"
+     inkscape:zoom="1.979899"
+     inkscape:cx="349.02653"
+     inkscape:cy="351.53212"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      inkscape:window-width="1865"
      inkscape:window-height="1024"
      inkscape:window-x="0"
@@ -10364,45 +10364,49 @@
        inkscape:export-xdpi="408.67038"
        inkscape:export-ydpi="408.67038" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 74.083332,205.71875 h 7.9375 v -18.52083 h -15.875"
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 74.083332,205.71875 h 7.9375 v -18.52083 l -13.229165,0"
        id="path16334"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="408.67038"
-       inkscape:export-ydpi="408.67038" />
+       inkscape:export-ydpi="408.67038"
+       sodipodi:nodetypes="cccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 74.083332,203.07292 h 5.291667 V 189.84375 H 60.854166 v -5.29167"
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 74.083332,203.07292 h 5.291667 v -13.22917 l -15.874999,0 v -5.29167"
        id="path16336"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="408.67038"
-       inkscape:export-ydpi="408.67038" />
+       inkscape:export-ydpi="408.67038"
+       sodipodi:nodetypes="ccccc" />
     <path
-       style="fill:none;stroke:#eb0000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 66.145832,187.19792 H 58.208333"
+       style="fill:none;stroke:#eb0000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 68.791667,187.19792 h -7.9375"
        id="path16338"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="408.67038"
-       inkscape:export-ydpi="408.67038" />
+       inkscape:export-ydpi="408.67038"
+       sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 58.208333,187.19792 v -2.64584"
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 60.854167,187.19792 v -2.64584"
        id="path16340"
        inkscape:connector-curvature="0"
        inkscape:export-xdpi="408.67038"
-       inkscape:export-ydpi="408.67038" />
+       inkscape:export-ydpi="408.67038"
+       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:9.8777771px;line-height:0;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="46.473652"
+       x="43.338615"
        y="229.43675"
        id="text16346"
        inkscape:export-xdpi="408.67038"
        inkscape:export-ydpi="408.67038"><tspan
          sodipodi:role="line"
          id="tspan16344"
-         x="46.473652"
+         x="43.338615"
          y="229.43675"
-         style="stroke-width:0.26458332">APA Sield v1</tspan></text>
+         style="stroke-width:0.26458332">APA Shield v1</tspan></text>
   </g>
 </svg>
